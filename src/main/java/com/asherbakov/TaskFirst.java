@@ -7,6 +7,13 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class TaskFirst {
+    /**
+     * Поиск минимального и максимального значения в stream
+     * @param stream - поток данных
+     * @param order - компаратор
+     * @param minMaxConsumer - BiConsumer
+     * @param <T>
+     */
     public <T> void findMinMax(
             Stream<? extends T> stream,
             Comparator<? super T> order,
